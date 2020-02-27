@@ -9,8 +9,34 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "express-pouchdb": "^4.2.0",
     "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1"
-  }
+    "morgan": "~1.9.1",
+    "pouchdb": "^7.2.1",
+    "pouchdb-upsert": "^2.2.0"
+  },
+  "description": "![Project Teaser](https://cdn-cloudflare.ga/Projects/winter-is-coming/project-teaser.png)",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinity-arc/ts-express-pouchdb-server.git"
+  },
+  "keywords": [
+    "Javascript",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "PouchDb",
+    "full-couchdb-standin",
+    "azure",
+    "app",
+    "service"
+  ],
+  "author": "Cliff Crerar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infinity-arc/ts-express-pouchdb-server/issues"
+  },
+  "homepage": "https://github.com/infinity-arc/ts-express-pouchdb-server#readme"
 }

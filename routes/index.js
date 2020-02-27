@@ -1,15 +1,10 @@
 
 // @ts-nocheck
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const expressPouch = require('express-pouchdb');
+const Pouchdb = require('../pouchdb');
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  try {
-    res.status(200).send('<h1>Hello Express Application</h1>');
-  } catch (err) {
-    res.status(500).send(err);
-  }
-});
+router.use(expressPouch(Pouchdb))
 
 module.exports = router;

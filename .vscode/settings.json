@@ -1,0 +1,5 @@
+{
+	"appService.showBuildDuringDeployPrompt": false,
+	"appService.defaultWebAppToDeploy": "/subscriptions/8e4f0384-3854-4e60-af6d-c13489615482/resourceGroups/Pouch-db-express/providers/Microsoft.Web/sites/Pouch-db-express",
+	"appService.deploySubpath": ""
+}
