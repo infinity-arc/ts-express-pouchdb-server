@@ -13,6 +13,9 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pouchdb": "^7.2.1",
+    "pouchdb-adapter-http": "^7.2.1",
+    "pouchdb-adapter-leveldb": "^7.2.1",
+    "pouchdb-plugin-error": "^4.2.0",
     "pouchdb-upsert": "^2.2.0"
   },
   "description": "![Project Teaser](https://cdn-cloudflare.ga/Projects/winter-is-coming/project-teaser.png)",

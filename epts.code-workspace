@@ -4,5 +4,18 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"javascript.referencesCodeLens.enabled": true,
+		"javascript.suggestionActions.enabled": true,
+		"javascript.format.semicolons": "insert",
+		"typescript.validate.enable": false,
+		"javascript.implicitProjectConfig.checkJs": true,
+		"javascript.implicitProjectConfig.experimentalDecorators": true,
+		"javascript.preferences.quoteStyle": "single",
+		"javascript.referencesCodeLens.showOnAllFunctions": true,
+		"typescript.suggest.enabled": false,
+		"typescript.suggest.paths": false,
+		"typescript.tsc.autoDetect": "off",
+		"typescript.tsserver.trace": "off"
+	}
 }
