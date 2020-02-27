@@ -6,8 +6,6 @@ const expressPouch = require('express-pouchdb');
 const Pouchdb = require('../pouchdb');
 const path = require('path');
 
-console.log(path.resolve('data'));
-
 router.use(expressPouch(Pouchdb,{
   configPath: path.resolve('./data/config.json'),
   logPath: path.resolve('./data/logs/log.txt'),
