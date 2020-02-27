@@ -3,3 +3,4 @@ node_modules
 pouch__all_dbs__
 _users
 _replicator
+logs.txt
