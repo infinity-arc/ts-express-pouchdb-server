@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/cliff/git/generator-azure-web-app"
 		}
 	],
 	"settings": {
