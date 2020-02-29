@@ -11,8 +11,9 @@ const expressPouch = require('express-pouchdb');
 const path = require('path');
 
 const defaultDb = new Pouchdb('default');
-
-defaultDb.upsert('mittens',(doc)=>defaultDoc).then(doc=>console.log(doc)).catch(err=>console.error(err));
+defaultDb.upsert('mittens',(doc)=>defaultDoc)
+  .then(doc=>console.log(doc))
+  .catch(err=>console.error(err));
 
 router.use(expressPouch(Pouchdb, {
 
