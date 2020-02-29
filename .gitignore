@@ -1,7 +1,3 @@
 node_modules
 .DS_Store
-pouch__all_dbs__
-_users
-_replicator
-logs.txt
 .vscode

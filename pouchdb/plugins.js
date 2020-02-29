@@ -9,13 +9,11 @@ const httpAdapter = require('pouchdb-adapter-http');
 
 Pouchdb
 	.plugin(upsert)
-	.plugin(systemDb);
-// console.log('Pouchdb: ', Pouchdb.adapter);
+	.plugin(systemDb)
+	.plugin(levelDbAdapter)
+	.plugin(httpAdapter)
 
-// Pouchdb.adapter('lev',httpAdapter,false);
-// Pouchdb.adapter('leveldb',levelDbAdapter,false);
-
-
+console.log('Pouchdb: ', Pouchdb.adapter);
 
 defaults = Pouchdb.defaults({ adapter: 'leveldb', prefix: path.resolve() + '/data/' });
 

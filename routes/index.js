@@ -1,15 +1,20 @@
 // @ts-nocheck
+
+const {Pouchdb,defaultDoc} = require('../pouchdb');
+
 const express = require('express');
 
 const router = express.Router();
 
 const expressPouch = require('express-pouchdb');
 
-const Pouchdb = require('../pouchdb');
-
 const path = require('path');
 
-const expressPouchApp = expressPouch(Pouchdb, {
+const defaultDb = new Pouchdb('default');
+
+defaultDb.upsert('mittens',(doc)=>defaultDoc).then(doc=>console.log(doc)).catch(err=>console.error(err));
+
+router.use(expressPouch(Pouchdb, {
 
   configPath: path.resolve('./data/config.json'),
 
@@ -17,12 +22,8 @@ const expressPouchApp = expressPouch(Pouchdb, {
 
   mode: 'fullCouchDB'
 
-});
+}));
 
-// expressPouchApp.use(express.static(path.resolve('./data')));
-
-// expressPouchApp.use(express.static(path.resolve('./node_modules/pouchdb-fauxton')));
-
-router.use(expressPouchApp)
+router.use('/default',expressPouch(defaultDb));
 
 module.exports = router;

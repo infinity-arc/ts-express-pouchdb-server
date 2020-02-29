@@ -2,6 +2,7 @@
   "name": "express-pouch-ts-server",
   "version": "0.5.1",
   "private": true,
+  "main": "./bin/www",
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -19,7 +20,6 @@
     "pouchdb-upsert": "^2.2.0"
   },
   "description": "![Project Teaser](https://cdn-cloudflare.ga/Projects/winter-is-coming/project-teaser.png)",
-  "main": "app.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
