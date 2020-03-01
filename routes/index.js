@@ -1,19 +1,15 @@
 // @ts-nocheck
 
-const {Pouchdb,defaultDoc} = require('../pouchdb');
-
-const express = require('express');
-
-const router = express.Router();
-
-const expressPouch = require('express-pouchdb');
-
-const path = require('path');
-
-const defaultDb = new Pouchdb('default');
-defaultDb.upsert('mittens',(doc)=>defaultDoc)
-  .then(doc=>console.log(doc))
-  .catch(err=>console.error(err));
+const
+  { Pouchdb, defaultDoc } = require('../pouchdb'),
+  express = require('express'),
+  router = express.Router(),
+  expressPouch = require('express-pouchdb'),
+  path = require('path'),
+  defaultDb = new Pouchdb('default',{prefix: path.resolve() + '/data/'});
+defaultDb.upsert('mittens', (doc) => defaultDoc)
+  .then(doc => console.log(doc))
+  .catch(err => console.error(err));
 
 router.use(expressPouch(Pouchdb, {
 
@@ -25,6 +21,6 @@ router.use(expressPouch(Pouchdb, {
 
 }));
 
-router.use('/default',expressPouch(defaultDb));
+router.use('/default', expressPouch(defaultDb));
 
 module.exports = router;

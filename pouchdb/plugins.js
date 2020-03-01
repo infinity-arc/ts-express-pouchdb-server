@@ -1,20 +1,26 @@
+/**
+ * Setup and configure pouchdb
+ */
 // @ts-nocheck
-
-const Pouchdb = require('pouchdb');
-const path = require('path');
-const systemDb = require('pouchdb-system-db');
-const upsert = require('pouchdb-upsert');
-const levelDbAdapter = require('pouchdb-adapter-leveldb');
-const httpAdapter = require('pouchdb-adapter-http');
+const
+	Pouchdb = require('pouchdb'),
+	path = require('path'),
+	systemDb = require('pouchdb-system-db'),
+	upsert = require('pouchdb-upsert'),
+	levelDbAdapter = require('pouchdb-adapter-leveldb'),
+	httpAdapter = require('pouchdb-adapter-http');
 
 Pouchdb
 	.plugin(upsert)
 	.plugin(systemDb)
 	.plugin(levelDbAdapter)
-	.plugin(httpAdapter)
+	.plugin(httpAdapter);
 
-console.log('Pouchdb: ', Pouchdb.adapter);
-
-defaults = Pouchdb.defaults({ adapter: 'leveldb', prefix: path.resolve() + '/data/' });
+defaults = Pouchdb.defaults(
+	{
+		adapter: 'leveldb',
+		prefix: path.resolve() + '/data/'
+	}
+);
 
 module.exports = defaults;

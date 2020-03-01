@@ -1,6 +1,6 @@
 // @ts-nocheck
 const
-Pouchdb = require('./plugins'),
+	Pouchdb = require('./plugins'),
 	defaultDoc = require('./defuault-doc.json');
 
 module.exports = { Pouchdb, defaultDoc };
