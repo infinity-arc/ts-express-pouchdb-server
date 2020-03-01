@@ -4,6 +4,9 @@
  * Module dependencies.
  */
 
+console.log('NODE_ENV: ',process.env.NODE_ENV);
+console.log('PORT:',process.env.PORT);
+
 const app = require('../app');
 const debug = require('debug')('express-pouch-ts-server:server');
 const http = require('http');

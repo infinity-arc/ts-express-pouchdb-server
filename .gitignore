@@ -1,3 +1,8 @@
 node_modules
 .DS_Store
 .vscode
+_replicator
+_users
+default
+config.json
+log.txt
