@@ -12,8 +12,8 @@
     "express-pouchdb": "^4.2.0",
     "http-errors": "~1.8.0",
     "morgan": "~1.10.0",
-    "pouchdb": "^7.2.1",
-    "pouchdb-adapter-http": "^7.2.1",
+    "pouchdb": "^7.3.1",
+    "pouchdb-adapter-http": "^7.3.1",
     "pouchdb-adapter-leveldb": "^7.2.1",
     "pouchdb-plugin-error": "^4.2.0",
     "pouchdb-upsert": "^2.2.0"
