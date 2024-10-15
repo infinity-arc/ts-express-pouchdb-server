@@ -6,9 +6,9 @@
     "start": "node ./bin/www --env production"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.5",
+    "cookie-parser": "~1.4.7",
     "debug": "~4.1.1",
-    "express": "~4.17.3",
+    "express": "~4.21.1",
     "express-pouchdb": "^4.2.0",
     "http-errors": "~1.8.0",
     "morgan": "~1.10.0",
